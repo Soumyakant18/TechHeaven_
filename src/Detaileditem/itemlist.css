@@ -1,0 +1,38 @@
+.item-list-container {
+  width: 100%;
+  text-align: center; 
+  background-color: #E6E6FA;
+  padding-top: 50px;
+
+}
+.item-list {
+margin-left: 80px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+}
+
+.item-container {
+  border: 1px solid white;
+  border-radius: 11px;
+ 
+  padding: 20px;
+  margin: 10px;
+  width: 390px; 
+  background-color: white;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; }
+
+.itemimg {
+  
+  max-width: 180px; 
+}
+
+.item-details {
+  
+  flex: 1; }
+
+.price {
+  color: #007acc;
+}
