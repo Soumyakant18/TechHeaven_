@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Product from './product'; // Create a Product component for individual products
+import './CartPage.css'; // Import your CSS file
+import ProductCard from './ProductCard'; // Create a ProductCard component for individual products
 import CartItem from './CartItem'; // Create a CartItem component for cart items
-import './CartPage.css';
 
 function CartPage() {
   const [cart, setCart] = useState([]);
@@ -24,26 +24,35 @@ function CartPage() {
 
   return (
     <div className="cart-container">
-      <h1>Shopping Cart</h1>
+      <h1>Your Shopping Cart</h1>
 
       <div className="product-list">
         {products.map((product) => (
-          <Product key={product.id} product={product} addToCart={addToCart} />
-        ))}
+          <ProductCard
+            key={product.id}
+            product={product}
+            addToCart={addToCart}
+          />
+        )}
       </div>
 
       <div className="cart">
-        <h2>Your Cart</h2>
+        <h2>Cart Items</h2>
         {cart.length === 0 ? (
           <p>Your cart is empty</p>
         ) : (
           <ul>
             {cart.map((item) => (
-              <CartItem key={item.id} item={item} removeFromCart={removeFromCart} />
-            ))}
+              <CartItem
+                key={item.id}
+                item={item}
+                removeFromCart={removeFromCart}
+              />
+            )}
           </ul>
         )}
-        <p>Total Cost: RS: {totalCost}</p>
+        <p>Total Cost: ${totalCost}</p>
+        <button className="checkout-button">Proceed to Checkout</button>
       </div>
     </div>
   );

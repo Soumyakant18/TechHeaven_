@@ -1,0 +1,76 @@
+body{
+    background: url("/src/assets/bg.png");
+    /* background-attachment: fixed; */
+    filter: blur(450%);
+    background-size: cover;
+    color: aliceblue;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.main-banner{
+    height: 90vh;
+    width:100%;
+    display: flex;
+}
+.banner-left{
+    height:90vh;
+    width: 50%;
+    padding-left: 10%;
+}
+.banner-right{
+    height:90vh;
+    width: 49%;
+}
+h1{
+    font-size:650%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h4{
+    font-size:30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0%;
+    margin:0%;
+}
+p{
+    padding:0%;
+    margin: 0%;
+}
+.banner-right img{
+    padding-top:50px;
+    width:550px;
+}
+.about h1{
+    font-size:300%;
+    text-align: center;
+    margin: 0%;
+    
+}
+.about p{
+    text-align: center;
+    margin: 0%;
+}
+
+.pricing{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    width:60%;
+    display: flex;
+    border: 1px solid rgb(219, 219, 219);
+    /* background-color:rgba(240, 248, 255, 0.589); */
+    backdrop-filter: blur(100px);
+    border-radius: 25px;
+    
+    
+}
+.pricing-left img{
+    width:400px
+}
+
+.main-price{
+ display: flex;
+ justify-content: center;
+ align-items:center;
+}
