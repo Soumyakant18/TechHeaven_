@@ -6,7 +6,7 @@ import './Banner.css';
 const Banner = () => {
     return (
         <>
-        <div classNameName="body">
+        <div className="body1">
             <div className="main-banner">
 
                 <div className="banner-left">
@@ -19,22 +19,23 @@ const Banner = () => {
                     <img src={BannerImg} alt=""/>
                 </div>
             </div>
-            <div className="about">
+            {/* <div className="about">
                 <h1>Buy now </h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores cupiditate debitis cum tempore invento</p>
-            </div>
+            </div> */}
             <div className="main-price">
                 <div className="pricing">
                     <div className="pricing-left">
                         <img src={BannerImg} alt=""/>
                     </div>
-                <div className="pricing-right">
-                    <h2>199.00 USD</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci sed vel quia, tempore error velit alias ipsa accusamus omnis iste consequatur id aliquid rem! Sit laudantium amet ut velit?</p>
+                    
+                    <div className="pricing-right">
+                        <h2>70% OFF</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci sed vel quia, tempore error velit alias ipsa accusamus omnis iste consequatur id aliquid rem! Sit laudantium amet ut velit?</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         </>
     );
 }
