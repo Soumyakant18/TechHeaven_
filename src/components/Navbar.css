@@ -35,7 +35,9 @@
         font-size:40%;  
         align-items: center;
     }
-    
+    .middle h1{
+        color: #1bf8b6;
+    }
 }
 .custom-icon{
     font-size:larger;
