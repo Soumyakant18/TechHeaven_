@@ -19,9 +19,9 @@ const Navbar = () => {
                     <h1>TechHeaven</h1>
                 </div>
                 <div className="right">
-                <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#1bf8b6",margin:'10%'}} className="custom-icon" />
-                <FontAwesomeIcon icon={faHeart} style={{color: "#1bf8b6",margin:'20%'}} className="custom-icon"/>
-                <FontAwesomeIcon icon={faCartShopping} style={{color: "#1bf8b6",margin:'10%'}} className="custom-icon"/>
+                <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#E6E6FA",margin:'10%'}} className="custom-icon" />
+                <FontAwesomeIcon icon={faHeart} style={{color: "red",margin:'20%'}} className="custom-icon"/>
+                <FontAwesomeIcon icon={faCartShopping} style={{color: "#E6E6FA",margin:'10%'}} className="custom-icon"/>
                 
                 </div>
             </div>
