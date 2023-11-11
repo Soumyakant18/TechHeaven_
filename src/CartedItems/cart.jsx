@@ -53,7 +53,7 @@ function Cart() {
           </ul>
         )}
         <p>Total Cost: RS: {totalCost}</p>
-        <Link to="/checkout">
+        <Link to="/Checkout">
           <button className="buy-now-button">Buy Now</button>
         </Link>
       </div>

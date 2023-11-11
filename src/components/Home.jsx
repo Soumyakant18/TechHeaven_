@@ -6,7 +6,7 @@ import Featuredp from './Featuredp';
 import Watches from './Watches';
 import './Home.css'; 
 import { Route, Routes } from 'react-router-dom';
-import Cart from '../CartedItems/cart';
+
 
 const Home = () => {
   return (

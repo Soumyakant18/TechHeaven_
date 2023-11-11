@@ -5,8 +5,8 @@ import CheckoutPage from "./CartedItems/Checkout";
 function Home(){
     return(
         <div>
-            {/* <Home /> */}
-            <CheckoutPage />
+            <Home />
+            {/* <CheckoutPage /> */}
         </div>
     );
 }

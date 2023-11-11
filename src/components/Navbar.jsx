@@ -20,14 +20,9 @@ const Navbar = () => {
                     <h1>TechHeaven</h1>
                 </div>
                 <div className="right">
-{/* <<<<<<< HEAD
-                <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#1bf8b6",margin:'10%'}} className="custom-icon" />
-                <FontAwesomeIcon icon={faHeart} style={{color: "#1bf8b6",margin:'20%'}} className="custom-icon"/>
-                <Link to="/Cart"><FontAwesomeIcon icon={faCartShopping} style={{color: "#1bf8b6",margin:'10%'}} className="custom-icon"/></Link>
-======= */}
                 <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "white",margin:'10%'}} className="custom-icon" />
                 <FontAwesomeIcon icon={faHeart} style={{color: "white",margin:'20%'}} className="custom-icon"/>
-                <FontAwesomeIcon icon={faCartShopping} style={{color: "white",margin:'10%'}} className="custom-icon"/>
+                <Link to="/Cart"><FontAwesomeIcon icon={faCartShopping} style={{color: "white",margin:'10%'}} className="custom-icon"/></Link>
                 
                 </div>
             </div>
