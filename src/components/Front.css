@@ -27,12 +27,13 @@
     
     
 }
-h1{
+.banner-left h1{
     font-size:650%;
     font-weight: lighter;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     margin-bottom: 0%;
+    text-align: left;
 }
 h2{
     font-size:650%;

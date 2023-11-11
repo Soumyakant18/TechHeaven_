@@ -24,6 +24,7 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faHeart} style={{color: "white",margin:'20%'}} className="custom-icon"/>
                 <Link to="/Cart"><FontAwesomeIcon icon={faCartShopping} style={{color: "white",margin:'10%'}} className="custom-icon"/></Link>
                 
+                
                 </div>
             </div>
         </>

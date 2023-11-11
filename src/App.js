@@ -1,5 +1,4 @@
 import React from 'react';
-// <<<<<<< HEAD
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import Home from './components/Home';
 // import Cart from './CartedItems/cart';
@@ -16,11 +15,10 @@ import React from 'react';
 //         </Routes>
 //       </div>
 //     </Router>
-// =======
 import './App.css';
-import Cart from './CartedItems/cart';
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ItemList from './Detaileditem/itemlist';
+import Cart from './CartedItems/cart';
 import ItemWatch from './Detaileditem/itemwatch';
 import Home from './components/Home';
 import Watches from './components/Watches';
@@ -33,7 +31,7 @@ import CheckoutPage from './CartedItems/Checkout';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route path='/itemwatch' element={<ItemWatch/>}></Route>
@@ -42,10 +40,9 @@ function App() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/Checkout"element={<CheckoutPage/>}></Route>
     </Routes>
-  
-    </Router>
 
     
+    </BrowserRouter>
   );
 }
 
