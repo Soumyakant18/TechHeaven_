@@ -2,7 +2,7 @@
     padding:0;
     margin:0;
     background-color:black;
-    color: #E6E6FA;
+    color: #ffffff;
     display: flex;
     justify-content:space-between;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -28,16 +28,21 @@
     .right FontAwesomeIcon{
         margin:7%
     }
-
+    .middle h1{
+        color: #1bf8b6;
+        
+    }
+    
     .middle{
         display: flex;
         justify-content: center;
         font-size:40%;  
         align-items: center;
+        background-color: black;
     }
-    .middle h1{
-        color: #1bf8b6;
-    }
+
+    
+   
 }
 .custom-icon{
     font-size:larger;
