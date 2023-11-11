@@ -2,6 +2,8 @@ import React from "react";
 import './Front.css'
 import wireless_earphone from '../assets/wireless_earphone-removebg-preview.png'
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -24,8 +26,10 @@ const Front = () => {
                     <h2>Earbuds</h2>
                     <h4>Starting from $999.</h4>
                     <p>Visit now , SALE IS LIVE</p>
+                    <Link to="/itemtws">
                     
-                    <button style={buttonStyles}>Shop Products</button>
+                    <button style={buttonStyles}>Buy now</button> </Link>
+                    
     
 
                 </div>

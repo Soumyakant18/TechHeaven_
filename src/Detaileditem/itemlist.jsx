@@ -15,6 +15,7 @@ import myImage9 from '../assets/headphone11.webp';
 import myImage10 from '../assets/headphone12.webp';
 import myImage11 from '../assets/headphone13.jpg';
 import myImage12 from '../assets/headphone14.webp';
+
 function ItemList() {
 
   // Sample items
@@ -62,6 +63,4 @@ function ItemList() {
     </>
   );
 }
-
 export default ItemList;
-
