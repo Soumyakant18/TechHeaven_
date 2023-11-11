@@ -3,92 +3,95 @@
   text-align: center; 
   background-color: #E6E6FA;
   padding-top: 50px;
-  padding-bottom: 50px ;
-
+  padding-bottom: 50px;
 }
+
 .item-list {
-margin-left: 90px;
+ 
   display: flex;
   flex-wrap: wrap; 
-  justify-content: flex-start; 
-
+  justify-content: center; 
 }
 
 .item-container {
   border: 1px solid white;
   border-radius: 11px;
- 
-  padding: 20px;
+  padding: 18px;
   margin: 10px;
-  width: 390px; 
+  width: 400px; 
   background-color: white;
   display: flex; 
   align-items: center; 
-  justify-content: space-between; }
-
-.itemimg {
-  
-  max-width: 180px; 
-  transition:transform 0.2s ease;
+  justify-content: space-between; 
 }
 
-.itemimg:hover{
+.itemimg {
+  max-width: 180px; 
+  transition: transform 0.2s ease;
+}
+
+.itemimg:hover {
   transform: scale(1.1); 
 }
 
 .item-details {
-  
   flex: 1;
- }
-.prname{
-  margin-top: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  margin-right: 14px; /* Add right margin to create space between prname and price */
+}
+
+.prname {
+  margin-bottom: 2px;
+  font-family: Didot;
   font-weight: 900;
   font-size: 26px;
+  margin-bottom: 14px; /* Add bottom margin to create space between prname and description */
 }
+
 .price {
   color: #007acc;
   font-size: 20px;
   font-weight: 700;
-  margin-left: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 14px; /* Add bottom margin to create space between price and description */
 }
+
 .price {
-  transition: color 0.3s ease; /* Add a transition for the "color" property with a duration of 0.3 seconds and an ease timing function */
+  transition: color 0.3s ease;
 }
 
 .price:hover {
-  color: red; /* Change the text color on hover (you can adjust this to your preferred effect) */
+  color: red;
 }
-.description{
+
+.description {
   margin-left: 17px;
+  margin-bottom: 30px;
   font-family: 'Times New Roman', Times, serif;
-  
 }
+
 .item-details h3 {
   color: black; 
   margin-left: 5px;
   margin-bottom: 47px;
-  /* Change the item name color to blue */
 }
 
 .bottom-icons {
   display: flex;
   justify-content: flex-end;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-right: 15px;
-   /* Adjust the margin as needed */
 }
 
 .carted,
 .liked {
   margin-left: 20px; 
-  /* Adjust the margin as needed to create space between the icons */
+  margin-top: 5px;
 }
+
 .carted:hover {
-  color: #4FFFB0; /* Change the color to red on hover */
+  color: #4FFFB0;
 }
 
 .liked:hover {
-  color: red; /* Change the color to a different shade of pink on hover */
+  color: red;
 }
