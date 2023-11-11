@@ -23,6 +23,7 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faHeart} style={{color: "white",margin:'20%'}} className="custom-icon"/>
                 <FontAwesomeIcon icon={faCartShopping} style={{color: "white",margin:'10%'}} className="custom-icon"/>
                 
+                
                 </div>
             </div>
         </>

@@ -1,24 +1,45 @@
-import React from 'react'
+import React from "react";
+import './Category.css'
+import Image1 from '../assets/banner.png'
 
-const Category = () => {
+const categories = [
+  {
+    name: 'Headphones',
+    image: Image1,
+  },
+  {
+    name: 'Laptops',
+    image: Image1,
+  },
+  {
+    name: 'Smartwatches',
+    image: Image1,
+  },
+  {
+    name: 'Smartphones',
+    image: Image1,
+  },
+];
+
+
+function Category() {
   return (
     <>
-      <div className="main-body">
-        <div className="cat-1">
-            
+    
+    <div className="main">
+    <h1 >Categories</h1>
+    <div className="category-section">
+      {categories.map((category, index) => (
+        <div key={index} className="category-box">
+          <img src={category.image} alt={category.name} />
+          <p>{category.name}</p>
         </div>
-        <div className="cat-2">
-
-        </div>
-        <div className="cat-3">
-
-        </div>
-        <div className="cat-4">
-
-        </div>
-      </div>
+      ))}
+    </div>
+    </div>
     </>
-  )
+  );
 }
+
 
 export default Category

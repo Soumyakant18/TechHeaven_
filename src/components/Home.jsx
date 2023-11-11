@@ -4,6 +4,8 @@ import Banner from './Banner';
 import Front from './Front' 
 import Featuredp from './Featuredp';
 import Watches from './Watches';
+import Category from './Category';
+import Footer from './Footer';
 import './Home.css'; 
 
 const Home = () => {
@@ -13,7 +15,10 @@ const Home = () => {
       <Front/>
       <Banner/>
       <Featuredp/>
+      <Category/>
       <Watches/>
+      <Footer/>
+      
 
       
     </div>
