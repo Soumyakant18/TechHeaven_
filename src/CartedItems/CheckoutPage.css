@@ -1,0 +1,67 @@
+/* CheckoutPage.css */
+
+.checkout-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .order-summary {
+    margin-bottom: 20px;
+  }
+  
+  .order-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .order-summary ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-summary li {
+    margin-bottom: 8px;
+  }
+  
+  .payment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .pay-now-button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .payment-instructions {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .payment-success {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    border-radius: 4px;
+  }
+  
+  .payment-success p {
+    margin: 0;
+  }
+  
+  /* Add more styles as needed */
+  

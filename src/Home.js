@@ -1,9 +1,12 @@
 import CartPage from "./CartedItems/cart";
+import Home from "./components/Home";
+import CheckoutPage from "./CartedItems/Checkout";
 
 function Home(){
     return(
         <div>
-            <CartPage />
+            {/* <Home /> */}
+            <CheckoutPage />
         </div>
     );
 }
