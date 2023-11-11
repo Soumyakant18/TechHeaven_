@@ -1,0 +1,69 @@
+/* Style the featured products section */
+.featured-products {
+    text-align: left;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f8d5ab, #ffffff);
+  }
+  
+  /* Style the product grid */
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between items */
+  }
+  
+  /* Style each product box */
+  .product-box {
+    width: calc(25% - 10px); /* Set the width to 25% minus margin */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Style the product image */
+  .product-image img {
+    max-width: 80%;
+    height: auto;
+  }
+  .product-image{
+    background-color:antiquewhite;
+  }
+  
+  /* Style the product details */
+  .product-details h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+    
+  }
+
+  .product-details {
+    background-color: #ffffff;
+  }
+  
+  .product-details p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Style the "Add to Wishlist" button */
+  .product-details button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    /* padding: 5px 10px; */
+    padding-top:5px;
+    padding-bottom: 5px;
+    width:100%;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .product-details button:hover {
+    background-color: #0056b3;
+  }
+  
