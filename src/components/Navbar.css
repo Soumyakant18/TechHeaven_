@@ -41,6 +41,7 @@
     } 
     .middle h1{ 
         color: white; 
+        font-weight: bold;
     } 
 } 
 .custom-icon{ 
