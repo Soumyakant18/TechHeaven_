@@ -9,18 +9,22 @@ import Image4 from '../assets/cat4.png'
 const categories = [
   {
     name: 'Headphones',
+    path: '/listitem',
     image: Image1,
   },
   {
     name: 'Laptops',
+    path: '/itempc',
     image: Image1,
   },
   {
     name: 'Smartwatches',
+    path: '/itemwatch',
     image: Image1,
   },
   {
     name: 'Smartphones',
+    path: '/itemphone',
     image: Image1,
   },
 ];
