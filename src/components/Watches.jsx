@@ -1,9 +1,7 @@
 import React from "react";
 import './Watches.css';
 import wireless_earphone from '../assets/watches-removebg-preview.png';
-import { Link, Route, Router } from 'react-router-dom'; // Import Link from react-router-dom
-// import ItemList from "../Detaileditem/itemlist";
-import ItemWatch from "../Detaileditem/itemwatch";
+import { Link } from 'react-router-dom';
 
 const Watches = () => {
   const buttonStyles = {
@@ -14,7 +12,7 @@ const Watches = () => {
     border: 'none',
     cursor: 'pointer',
   };
-
+  
 
   return (
     <>
@@ -30,17 +28,12 @@ const Watches = () => {
             <h4>Starting from $999.</h4>
             <p>Visit now, SALE IS LIVE</p>
 
-          <Link to ="/itemwatch">
-            <button style={buttonStyles} >
-
-              Buy now 
-
-            </button>
+            <Link to="/itemwatch">
+              <button style={buttonStyles}>
+                Buy now 
+              </button>
             </Link>
           </div>
-          {/* <Route path="/itemwatch" element={<ItemWatch/>} /> */}
-
-
         </div>
       </div>
     </>
