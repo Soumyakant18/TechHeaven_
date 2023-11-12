@@ -18,6 +18,10 @@ function App() {
       <Route path="/" element={<Home/>}></Route> 
       <Route path='/itemwatch' element={<ItemWatch/>}></Route> 
       <Route path='/itemtws' element={<Itemtws/>}></Route> 
+      <Route path='/itemphone' element={<Itemphone/>}></Route> 
+      <Route path='/itempc' element={<Itempc/>}></Route> 
+      <Route path='/listitem' element={<ItemList/>}></Route> 
+
     </Routes> 
  
      
