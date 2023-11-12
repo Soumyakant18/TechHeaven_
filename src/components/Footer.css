@@ -13,20 +13,21 @@
     
 }
 
-.middle{
+.middlee{
     display: flex;
     justify-content:space-around;
-    background-color: aliceblue;
+    /* background-color: rgb(185, 159, 231); */
+    background: linear-gradient(to top, rgb(185, 159, 231), #ffffff);
     padding: 2%;
 }
-.middle h1{
+.middlee h1{
     font-size:xx-large;
     font-weight: bolder;
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.middle h3{
+.middlee h3{
     font-size:large;
     font-weight:lighter;
     text-align: left;
@@ -36,8 +37,21 @@
 
 .bottom h3{
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
     padding: 0%;
     margin: 0%;
+    background-color: rgb(160, 105, 255);
+    color: rgb(0, 0, 0);
+    
+}
+.bottom{
+    padding: 20px 0 ;
+    background-color:rgb(160, 105, 255) ;
+}
+
+
+.social img{
+    width:2%;
+    padding:0 2%;
 }
