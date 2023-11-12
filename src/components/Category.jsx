@@ -1,23 +1,26 @@
 import React from "react";
 import './Category.css'
 import Image1 from '../assets/banner.png'
+import Image2 from '../assets/cat2.png'
+import Image3 from '../assets/cat3.png'
+import Image4 from '../assets/cat4.png'
 
 const categories = [
   {
-    name: 'Headphones',
+    name: '',
     image: Image1,
   },
   {
-    name: 'Laptops',
-    image: Image1,
+    name: '',
+    image: Image2,
   },
   {
-    name: 'Smartwatches',
-    image: Image1,
+    name: '',
+    image: Image3,
   },
   {
-    name: 'Smartphones',
-    image: Image1,
+    name: '',
+    image: Image4,
   },
 ];
 
