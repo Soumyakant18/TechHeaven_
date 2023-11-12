@@ -1,24 +1,36 @@
 import React from "react"
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faEnvelopeOpen,faFacebook} from '@fortawesome/free-solid-svg-icons';
+import {faLaptop} from '@fortawesome/free-solid-svg-icons';
+import social1 from '../assets/social1.png'
+import social2 from '../assets/social2.png'
+import social3 from '../assets/social3.png'
+import social4 from '../assets/social4.png'
 
+  
 export default function Footer() {
+    
   return (
     <>
     <div className="footer">
         <div className="top">
+        
             <div className="social">
-                <h3>Get coonected with us on Social networks</h3>
-                <FontAwesomeIcon icon={faEnvelopeOpen} />
-                <FontAwesomeIcon icon={faEnvelopeOpen} />
-                <FontAwesomeIcon icon={faEnvelopeOpen} />
-                <i class="bi bi-instagram"></i>
+            <h3>Get coonected with us on Social networks</h3>
+                 <img src={social1} alt="nothing" />
+                 <img src={social2} alt="nothing" />
+                 <img src={social3} alt="nothing" />
+                 <img src={social4} alt="nothing" />
                 
+               
+                
+                 
+
+
                 
             </div>
         </div>
-        <div className="middle">
+        <div className="middlee">
             <div className="description">
                     <h1>Description</h1>
                     <h3>Lorem, ipsum dolor sit amet consectetur <br></br> adipisicing elit. Debitis temporibus quasi neque.<br></br> Officia accusamus debitis quis molestiae quia <br></br>ducimus neque atque labore, adipisci recusandae deleniti.<br></br> Officia sit totam assumenda non.</h3>

@@ -1,7 +1,13 @@
 import React from "react";
 import './Featuredp.css'
 import wireless_earphone from '../assets/wireless_earphone-removebg-preview.png'
-import productImage1 from '../assets/banner.png';
+import productImage1 from '../assets/pc2.jpg'
+import productImage2 from '../assets/headphone4.webp'
+import productImage3 from '../assets/pc1.jpg'
+import productImage4 from '../assets/sphone10.jpeg'
+import productImage5 from '../assets/swatch3.jpg'
+import productImage6 from '../assets/tws3.jpg'
+
 const productsData = [
     {
       id: 1,
@@ -13,31 +19,31 @@ const productsData = [
       id: 2,
       name: 'Product 2',
       price: '$14.99',
-      image: productImage1,
+      image: productImage2,
     },
     {
       id: 3,
       name: 'Product 3',
       price: '$19.99',
-      image: productImage1,
+      image: productImage3,
     },
     {
       id: 4,
       name: 'Product 4',
       price: '$9.99',
-      image: productImage1,
+      image: productImage4,
     },
     {
       id: 5,
       name: 'Product 5',
       price: '$12.99',
-      image: productImage1,
+      image: productImage5,
     },
     {
       id: 6,
       name: 'Product 6',
       price: '$22.99',
-      image: productImage1,
+      image: productImage6,
     },
     // {
     //   id: 7,
