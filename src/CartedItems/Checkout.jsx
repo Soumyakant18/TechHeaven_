@@ -49,7 +49,6 @@ const CheckoutPage = ({ cart, totalCost, clearCart }) => {
         <div className="payment-section">
           <button className="pay-now-button" onClick={handlePayment}>
             Pay Now
-            
           </button>
           <p className="payment-instructions">Click "Pay Now" to complete your purchase.</p>
         </div>
