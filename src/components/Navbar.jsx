@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css'; // Create a CSS file for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart,faMagnifyingGlass,faCartShopping} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
                 <div className="right">
                 <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "white",margin:'10%'}} className="custom-icon" />
                 <FontAwesomeIcon icon={faHeart} style={{color: "white",margin:'20%'}} className="custom-icon"/>
-                <FontAwesomeIcon icon={faCartShopping} style={{color: "white",margin:'10%'}} className="custom-icon"/>
+                <Link to="/Cart"><FontAwesomeIcon icon={faCartShopping} style={{color: "white",margin:'10%'}} className="custom-icon"/></Link>
                 
                 
                 </div>
