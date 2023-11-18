@@ -15,6 +15,9 @@ import myImage9 from '../assets/headphone11.webp';
 import myImage10 from '../assets/headphone12.webp';
 import myImage11 from '../assets/headphone13.jpg';
 import myImage12 from '../assets/headphone14.webp';
+import Planding from '../components/Planding';
+import { Link } from "react-router-dom";
+
 
 function ItemList() {
 
@@ -33,7 +36,9 @@ function ItemList() {
     { id: 11, name: 'Pebble', description: 'Affordable earphones with a durable design and clear audio.', price: 899, image: myImage11 },
     { id: 12, name: 'Zebronics', description: 'Budget-friendly in-ear headphones with enhanced bass.', price: 959, image: myImage12 }
   ];
-
+  const handleClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
   return (
 <>
     <Navbar></Navbar>
@@ -44,7 +49,8 @@ function ItemList() {
       
       <div className="item-list">
         {items.map((item) => (
-          <div key={item.id} className="item-container">
+         
+         <Link to="/Planding"><div key={item.id} className="item-container">
             <img className="itemimg" src={item.image} alt={item.name} /> {/* Display the imported image */}
             <div className="item-details">
               <h3 className='prname'>{item.name}</h3>
@@ -56,7 +62,8 @@ function ItemList() {
     <FontAwesomeIcon icon={faCartShopping} className="carted" />
   </div>
             </div>
-          </div>
+            
+          </div></Link>
         ))}
      </div>
     </div>

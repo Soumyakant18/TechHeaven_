@@ -6,7 +6,11 @@ import Featuredp from './Featuredp';
 import Watches from './Watches';
 import Category from './Category';
 import Footer from './Footer';
+import Singleproduct from './Singleproduct';
+import Planding from './Planding';
 import './Home.css'; 
+
+import {  Route, Routes } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -18,11 +22,16 @@ const Home = () => {
       <Category/>
       <Watches/>
       <Footer/>
+      {/* <Planding/> */}
+      
+      
+      
+    
       
 
       
     </div>
   );
 };
-
+ 
 export default Home;

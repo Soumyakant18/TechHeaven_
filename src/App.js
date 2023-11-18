@@ -8,6 +8,8 @@ import Watches from './components/Watches';
 import Itemphone from './Detaileditem/itemphone'; 
 import Itempc from './Detaileditem/itempc'; 
 import Itemtws from './Detaileditem/itemtws'; 
+import Planding from './components/Planding';
+
  
  
  
@@ -21,7 +23,7 @@ function App() {
       <Route path='/itemphone' element={<Itemphone/>}></Route> 
       <Route path='/itempc' element={<Itempc/>}></Route> 
       <Route path='/listitem' element={<ItemList/>}></Route> 
-
+      <Route path="/Planding" element={<Planding/>} />
     </Routes> 
  
      
