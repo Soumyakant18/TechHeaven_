@@ -1,78 +1,146 @@
-// Cart.js
-import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import './CartPage.css';
+import React, { useState } from 'react';
+import { Button, Card, Col, Container, Form, InputGroup, Row } from 'react-bootstrap';
+import "./CartPage.css"
+import productImage4 from '../assets/sphone10.jpeg'
 import Navbar from '../components/Navbar';
 
-const productsData = [
-  { id: 1, name: 'Product 1', price: '$10.99' },
-  { id: 2, name: 'Product 2', price: '$14.99' },
-  { id: 3, name: 'Product 3', price: '$19.99' },
-  // Add more products as needed
-];
+export default function SimpleCheckout() {
+  const [orderPlaced, setOrderPlaced] = useState(false);
 
-function Cart() {
-  const { productId } = useParams();
-  const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    if (productId) {
-      const productDetails = getProductDetailsById(productId);
-      if (productDetails) {
-        setCart([...cart, productDetails]);
-      }
-    }
-  }, [productId]);
-
-  const getProductDetailsById = (id) => {
-    return productsData.find((product) => product.id === parseInt(id, 10));
-  };
-
-  const removeFromCart = (productId) => {
-    const updatedCart = cart.filter((item) => item.id !== productId);
-    setCart(updatedCart);
-  };
-
-  const totalCost = cart.reduce((total, item) => total + parseFloat(item.price.replace('$', '')), 0).toFixed(2);
-
-  const clearCart = () => {
-    setCart([]);
+  const handleCheckout = () => {
+    setOrderPlaced(true);
+    alert('Your order has been successfully placed!');
   };
 
   return (
-    <div className="cart-container">
+    <section className="h-100" >
       <Navbar />
-      <div className="cart-wrapper">
-        <h1>Your Cart</h1>
-        <div className="cart">
-          {cart.length === 0 ? (
-            <p>Your cart is empty</p>
-          ) : (
-            <ul>
-              {cart.map((item) => (
-                <li key={item.id}>
-                  <div className="product-info">
-                    <span className="product-name">{item.name}</span>
-                    <span className="product-price">{item.price}</span>
-                  </div>
-                  <button onClick={() => removeFromCart(item.id)}>Remove</button>
-                </li>
-              ))}
-            </ul>
-          )}
-          <div className="cart-summary">
-            <p>Total Cost: ${totalCost}</p>
-            <div className="cart-buttons">
-              <button onClick={clearCart}>Clear Cart</button>
-              <Link to="/checkout">
-                <button className="proceed-to-checkout-button">Proceed to Checkout</button>
-              </Link>
-            </div>
+      <Container className="py-5">
+        <Row className="align-items-center">
+          <Col>
+            <Card>
+              <Card.Body className="p-4">
+                <Row>
+                  <Col lg="7">
+                    <h5 className='continue'>
+                      <a href="#!" className="text-body">
+                        Continue Shopping
+                      </a>
+                    </h5>
+                    <hr className='hr'/>
+
+                    <div className="mb-4">
+                      <p className="mb-1">Shopping cart</p>
+                    </div>
+
+                    <Card className="mb-3">
+                      <Card.Body>
+                        <div className="d-flex justify-content-between">
+                          <div className="d-flex flex-row align-items-center">
+                            <div className='image'>
+                              <img
+                                src={productImage4}
+                                alt="Shopping item"
+                              />
+                            </div>
+                            <div className="ms-3">
+                              <h5>Iphone 11 pro</h5>
+                              <p className="small mb-0">256GB, Yellow</p>
+                            </div>
+                          </div>
+                          <div className="d-flex flex-row align-items-center">
+                            <div className='h5'>
+                              <h5 className="fw-normal mb-0">2</h5>
+                            </div>
+                            <div style={{ width: "80px" }}>
+                              <h5 className="mb-0">$900</h5>
+                            </div >
+                            <a href="#!" >
+                              Remove
+                            </a>
+                          </div>
+                        </div>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+
+                  <Col lg="5">
+                    <Card className="bg-primary text-white rounded-3">
+                      <Card.Body>
+                        <div className="d-flex justify-content-between align-items-center mb-4">
+                          <h5 className="mb-0">Card details</h5>
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                            alt="Avatar"
+                          />
+                        </div>
+                        <Form className="mt-4">
+                          <Row className="mb-3">
+                            <Form.Group as={Col} md="12">
+                              <Form.Label>Cardholder's Name</Form.Label>
+                              <Form.Control type="text" placeholder="Enter cardholder's name" />
+                            </Form.Group>
+                          </Row>
+
+                          <Row className="mb-3">
+                            <Form.Group as={Col} md="12">
+                              <Form.Label>Card Number</Form.Label>
+                              <Form.Control type="text" placeholder="Enter card number" />
+                            </Form.Group>
+                          </Row>
+
+                          <Row className="mb-3">
+                            <Form.Group as={Col} md="6">
+                              <Form.Label>Expiration</Form.Label>
+                              <Form.Control type="text" placeholder="MM/YYYY" />
+                            </Form.Group>
+
+                            <Form.Group as={Col} md="6">
+                              <Form.Label>CVV</Form.Label>
+                              <Form.Control type="text" placeholder="Enter CVV" />
+                            </Form.Group>
+                          </Row>
+                        </Form>
+
+                        <hr />
+
+                        <div className="d-flex justify-content-between mb-2">
+                          <p>Subtotal</p>
+                          <p>$4798.00</p>
+                        </div>
+
+                        <div className="d-flex justify-content-between mb-2">
+                          <p>Shipping</p>
+                          <p>$20.00</p>
+                        </div>
+
+                        <div className="d-flex justify-content-between mb-2">
+                          <p>Total(Incl. taxes)</p>
+                          <p>$4818.00</p>
+                        </div>
+
+                        <Button variant="info" block size="lg" onClick={handleCheckout}>
+                          <div className="checkout">
+                            <span>
+                              Checkout <i className="checkout_btn"></i>
+                            </span>
+                          </div>
+                        </Button>
+
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        {orderPlaced && (
+          <div className="alert alert-success mt-3" role="alert">
+            Your order has been successfully placed!
           </div>
-        </div>
-      </div>
-    </div>
+        )}
+      </Container>
+    </section>
   );
 }
-
-export default Cart;
