@@ -1,0 +1,33 @@
+.h-100 {
+  backgroundColor: "#eee" 
+}
+
+.image img {
+  width: 60px;
+}
+
+.h5 {
+  width: 50px;
+}
+
+.mb-0 img {
+   width: 45px
+}
+.p-4 {
+  background-color:rgb(185, 159, 231);
+}
+
+.checkout:hover {
+  color:white ;
+  
+}
+
+.hr {
+  color: blue;
+}
+
+.textbody:hover {
+  color: white;
+  
+ 
+}
