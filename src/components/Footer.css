@@ -12,6 +12,13 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
+.social img{
+    width:2%;
+    margin:0 1%;
+}
+.social h3{
+    font-size: larger;
+}
 
 .middlee{
     display: flex;
@@ -43,6 +50,7 @@
     margin: 0%;
     background-color: rgb(160, 105, 255);
     color: rgb(0, 0, 0);
+    font-size:larger;
     
 }
 .bottom{
@@ -51,7 +59,3 @@
 }
 
 
-.social img{
-    width:2%;
-    padding:0 2%;
-}

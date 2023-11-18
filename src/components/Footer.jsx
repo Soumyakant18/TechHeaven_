@@ -1,7 +1,6 @@
 import React from "react"
 import './Footer.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faLaptop} from '@fortawesome/free-solid-svg-icons';
+
 import social1 from '../assets/social1.png'
 import social2 from '../assets/social2.png'
 import social3 from '../assets/social3.png'
@@ -16,19 +15,14 @@ export default function Footer() {
         <div className="top">
         
             <div className="social">
-            <h3>Get coonected with us on Social networks</h3>
+                <h3>Get coonected with us on Social networks</h3>
                  <img src={social1} alt="nothing" />
                  <img src={social2} alt="nothing" />
                  <img src={social3} alt="nothing" />
                  <img src={social4} alt="nothing" />
                 
-               
-                
-                 
-
-
-                
             </div>
+            
         </div>
         <div className="middlee">
             <div className="description">

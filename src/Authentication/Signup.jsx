@@ -2,9 +2,10 @@
 
 import React from 'react';
 import '../Authentication/Signup.css';
-import backgroundImage from '../../../TechHeaven_/src/assets/signin.jpg'; 
-import { Link,NavLink } from 'react-router-dom';
-
+import backgroundImage from '../../../TechHeaven_/src/assets/signin.jpg';
+import  './Signup.css'
+// import { Link,NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const Signup = () => {
   const containerStyle = {
     backgroundImage: `url(${backgroundImage})`,
@@ -35,7 +36,7 @@ const Signup = () => {
                 <input type="password" id="password_sgu" name="password" required />
 
                 <button type="submit">Sign up</button>
-                <p>Already have an account? <NavLink to="/signin">Signin</NavLink></p>
+                <p>Already have an account? <Link to="/signin">Signin</Link></p>
             </form>
         </div>
     </div>

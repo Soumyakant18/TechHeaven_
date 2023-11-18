@@ -3,7 +3,8 @@
 import React from 'react';
 import '../Authentication/Signin.css';
 import backgroundImage from '../../../TechHeaven_/src/assets/signin.jpg'; 
- import { Link,NavLink } from "react-router-dom";
+//  import { Link,NavLink } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
 const Signin = () => {
@@ -29,7 +30,7 @@ const Signin = () => {
           <input type="password" id="password" name="password" required/>
 
           <button type="submit">Sign In</button>
-          <p>Don't have a account?? <NavLink to="/Signup">Signup</NavLink> </p>
+          <p>Don't have a account?? <Link to="/Signup">Signup</Link> </p>
         </form>
       </div>
     </div>

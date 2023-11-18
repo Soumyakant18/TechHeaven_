@@ -10,6 +10,8 @@ import Itemphone from './Detaileditem/itemphone';
 import Itempc from './Detaileditem/itempc'; 
 import Itemtws from './Detaileditem/itemtws'; 
 import Planding from './components/Planding';
+import Signin from './Authentication/Signin';
+import Signup from './Authentication/Signup';
 
 import CheckoutPage from './CartedItems/Checkout';
  
@@ -29,6 +31,8 @@ function App() {
       <Route path='/itempc' element={<Itempc/>}></Route> 
       <Route path='/listitem' element={<ItemList/>}></Route> 
       <Route path="/Planding" element={<Planding/>} />
+      <Route path="/Signin" element={<Signin/>}/>
+      <Route path="/Signup" element={<Signup/>}/>
     </Routes> 
  
      
