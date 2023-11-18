@@ -11,7 +11,7 @@ const Banner = () => {
 
                 <div className="banner-left">
                     <h1>Buy From our Amazing Range of Products</h1>
-                    <h4>From only $199.View</h4>
+                    <h4>From only ₹199.View</h4>
                     <p>Visit now , SALE IS LIVE</p>
 
                 </div>
