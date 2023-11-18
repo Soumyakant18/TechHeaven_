@@ -3,8 +3,10 @@ import './Front.css'
 import wireless_earphone from '../assets/wireless_earphone-removebg-preview.png'
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Front = () => {
