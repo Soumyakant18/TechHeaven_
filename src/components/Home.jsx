@@ -6,6 +6,7 @@ import Featuredp from './Featuredp';
 import Watches from './Watches';
 import Category from './Category';
 import Footer from './Footer';
+import Planding from './Planding'
 import './Home.css'; 
 import { Route, Routes } from 'react-router-dom';
 

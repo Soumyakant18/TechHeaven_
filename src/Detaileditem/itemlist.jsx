@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping,faHeart} from '@fortawesome/free-solid-svg-icons';
 import Navbar from '../components/Navbar';
 import { useState,useEffect, } from 'react';
+import { Link } from 'react-router-dom';
 
 function ItemList() {
   const [headphones, setHeadphones] = useState([]);
@@ -36,7 +37,7 @@ function ItemList() {
       
       <div className="item-list">
         {headphones.map((item) => (
-          <div key={item.id} className="item-container">
+         <div key={item.id} className="item-container">
             <img className="itemimg" src={`data:image/png;base64,${item.image}`} alt={item.name} />
             <div className="item-details">
               <h3 className='prname'>{item.name}</h3>

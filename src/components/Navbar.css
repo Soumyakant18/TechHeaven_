@@ -44,6 +44,12 @@
         font-weight: bold;
     } 
 } 
+
+.cart{
+margin-top: 20px;
+margin-right: 40px;
+
+}
 .custom-icon{ 
     font-size:larger; 
 }

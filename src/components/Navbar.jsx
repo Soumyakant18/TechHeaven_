@@ -19,13 +19,9 @@ const Navbar = () => {
                 <div className="middle">
                     <h1>TechHeaven</h1>
                 </div>
-                <div className="cart" onClick={() => setShow(false)}>
-                <Link to="/cart">
-                    <span>
-                        <i className="fas fa-cart-plus"></i>
-                    </span>
-                    <span>2</span>  
-                </Link>  
+                <div className="cart" >
+                    
+                <Link to="/Cart"><FontAwesomeIcon icon={faCartShopping} style={{color: "white",margin:'10%'}} className="custom-icon"/></Link>
                 </div>
             </div>
         </>
