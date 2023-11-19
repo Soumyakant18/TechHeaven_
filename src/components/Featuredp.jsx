@@ -11,43 +11,55 @@ import productImage6 from '../assets/tws3.jpg'
 const productsData = [
     {
       id: 1,
-      name: 'AXL gaming 15v',
-      price: '₹63,999',
+
+      name: 'AXL SLAYBOOK',
+      price: '$10.99',
+
       image: productImage1,
       amount: 1,
     },
     {
       id: 2,
-      name: 'Leaf doublestorm',
-      price: '₹1499',
+
+      name: 'LEAF 550H',
+      price: '$14.99',
+
       image: productImage2,
       amount: 1,
     },
     {
       id: 3,
-      name: 'hp 15s fq5567',
-      price: '₹39,899',
+
+      name: 'HP PAVILLION',
+      price: '$19.99',
+ 
       image: productImage3,
       amount: 1,
     },
     {
       id: 4,
-      name: 'Apple 14 pro',
-      price: '₹90,999',
+
+      name: 'IPHONE 14',
+      price: '$9.99',
+
       image: productImage4,
       amount: 1,
     },
     {
       id: 5,
-      name: 'Boat hover',
-      price: '₹2799',
+
+      name: 'BOAT RUNNER V3',
+      price: '$12.99',
+
       image: productImage5,
       amount: 1,
     },
     {
       id: 6,
-      name: 'Alienware bashrock',
-      price: '₹2299',
+
+      name: 'HAMMER H6',
+      price: '$22.99',
+
       image: productImage6,
       amount: 1,
     },

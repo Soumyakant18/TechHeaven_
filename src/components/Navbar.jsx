@@ -5,7 +5,7 @@ import {faHeart,faMagnifyingGlass,faCartShopping} from '@fortawesome/free-solid-
 import { Link } from 'react-router-dom';
 
 
-const Navbar = () => {
+const Navbar = (setShow) => {
     return (
         <>
             <div className="main-div">
