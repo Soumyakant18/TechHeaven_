@@ -1,3 +1,26 @@
+<<<<<<< HEAD
 h2{
     font-size:300%;
 }
+=======
+.size_does_not_matter{
+    font-size: 2rem;
+}
+.sgu button{
+    margin-top: 2rem;
+}
+
+form{
+    background-color: #fff;
+  
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 580px;
+
+    padding-top:  40px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+>>>>>>> 4cb684b14ae46cf9cb189b3441d89c92e25777e5
