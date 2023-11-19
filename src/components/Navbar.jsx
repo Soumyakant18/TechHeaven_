@@ -2,9 +2,10 @@ import React from 'react';
 import './Navbar.css'; // Create a CSS file for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart,faMagnifyingGlass,faCartShopping} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 
-const Navbar = () => {
+const Navbar = (setShow) => {
     return (
         <>
             <div className="main-div">
@@ -18,11 +19,13 @@ const Navbar = () => {
                 <div className="middle">
                     <h1>TechHeaven</h1>
                 </div>
-                <div className="right">
-                <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "white",margin:'10%'}} className="custom-icon" />
-                <FontAwesomeIcon icon={faHeart} style={{color: "white",margin:'20%'}} className="custom-icon"/>
-                <FontAwesomeIcon icon={faCartShopping} style={{color: "white",margin:'10%'}} className="custom-icon"/>
-                
+                <div className="cart" onClick={() => setShow(false)}>
+                <Link to="/cart">
+                    <span>
+                        <i className="fas fa-cart-plus"></i>
+                    </span>
+                    <span>2</span>  
+                </Link>  
                 </div>
             </div>
         </>

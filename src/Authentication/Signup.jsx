@@ -1,11 +1,48 @@
 // Signup.jsx
 
-import React from 'react';
+import React, { useState } from 'react';
 import '../Authentication/Signup.css';
 import backgroundImage from '../../../TechHeaven_/src/assets/signin.jpg'; 
-import { Link,NavLink } from 'react-router-dom';
+import { Link,NavLink,useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+  const navigate=useNavigate()
+  const [signup,setSignup]=useState({
+    username: "",
+    email: "",
+    phone: "",
+    password: ""
+  })
+
+  const handelSubmit=((e)=>{
+    e.preventDefault()
+    const val={...signup}
+    const username=val.username
+    const email=val.email
+    const phone=val.phone
+    const password=val.password
+    const data={email,password,phone,username}
+    // console.log(data)
+    fetch('http://localhost:8080/api/student', {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+    })
+.then(response => {
+    navigate(`/Signin`)
+})
+.catch(error => {
+    console.error("Error during fetch:", error);
+});
+
+  })
+
+  const Signupchange=((e)=>{
+    const name=e.target.name
+    const value=e.target.value
+    setSignup({...signup, [name]:value})
+  })
+
   const containerStyle = {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
@@ -18,24 +55,24 @@ const Signup = () => {
 
   return (
     <div style={containerStyle}>
-      <div class="container_sgu">
-        <div class="body_sgu">
-            <form class="sgu" action="your-server-endpoint" method="POST">
-                <h2>Sign Up</h2>
-                <label class="user_sgu" for="username">Username:</label>
-                <input type="text" id="username_sgu" name="username" required />
+      <div className="container_sgu">
+        <div className="body_sgu">
+            <form className="sgu" onSubmit={handelSubmit}>
+                <h2 className='size_does_not_matter'>Sign Up</h2>
+                <label className="user_sgu">Username:</label>
+                <input type="text" id="username_sgu"  value={signup.username} onChange={Signupchange} name='username' />
 
                 <label for="email">Email:</label>
-                <input type="email" id="email_sgu" name="email" required />
+                <input type="email" id="email_sgu"  value={signup.email} onChange={Signupchange} name='email' />
 
                 <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" id="phoneNumber_sgu" name="phoneNumber" required />
+                <input type="text" id="phoneNumber_sgu"  value={signup.phone} onChange={Signupchange} name='phone' />
 
                 <label for="password">Password:</label>
-                <input type="password" id="password_sgu" name="password" required />
-
-                <button type="submit">Sign up</button>
-                <p>Already have an account? <NavLink to="/signin">Signin</NavLink></p>
+                <input type="password" id="password_sgu"  value={signup.password} onChange={Signupchange} name='password' />
+                
+                <button>Sign up</button>
+                <p>Already have an account? <NavLink to="/">Signin</NavLink></p>
             </form>
         </div>
     </div>
