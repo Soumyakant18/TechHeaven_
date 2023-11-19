@@ -1,5 +1,6 @@
 import React from "react"
 import './Footer.css'
+import { Link } from "react-router-dom"
 
 import social1 from '../assets/social1.png'
 import social2 from '../assets/social2.png'
@@ -27,14 +28,14 @@ export default function Footer() {
         <div className="middlee">
             <div className="description">
                     <h1>Description</h1>
-                    <h3>Lorem, ipsum dolor sit amet consectetur <br></br> adipisicing elit. Debitis temporibus quasi neque.<br></br> Officia accusamus debitis quis molestiae quia <br></br>ducimus neque atque labore, adipisci recusandae deleniti.<br></br> Officia sit totam assumenda non.</h3>
+                    <h3>Welcome to Techaven  Your Ultimate Destination for Tech Enthusiasts!<br></br> Discover a world of cutting-edge technology and innovation at our <br></br> premier e-commerce platform, where the latest gadgets and<br></br>  electronics are just a click away.</h3>
             </div>
             <div className="products">
                     <h1>Products</h1>
-                    <h3>Headphones</h3>
-                    <h3>Laptops</h3>
-                    <h3>SmartWatches</h3>
-                    <h3>Smartphones</h3>
+                    <Link to="/listitem"><h3>Headphones</h3></Link>
+                    <Link to="/itempc"><h3>Laptops</h3></Link>
+                    <Link to="/itemwatch"><h3>SmartWatches</h3></Link>
+                    <Link to="/itemphone"><h3>Smartphones</h3></Link>
             </div>
             <div className="useful-links">
                 <h1>Links</h1>

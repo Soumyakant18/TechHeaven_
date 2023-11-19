@@ -12,6 +12,12 @@ import Itemtws from './Detaileditem/itemtws';
 import Planding from './components/Planding';
 import Signin from './Authentication/Signin';
 import Signup from './Authentication/Signup';
+import itemlist from './Detaileditem/itemlist';
+import itempc from './Detaileditem/itempc';
+import itemphone from './Detaileditem/itemphone';
+import itemtws from './Detaileditem/itemtws';
+import itemwatch from './Detaileditem/itemwatch';
+
 
 import CheckoutPage from './CartedItems/Checkout';
  
@@ -33,6 +39,12 @@ function App() {
       <Route path="/Planding" element={<Planding/>} />
       <Route path="/Signin" element={<Signin/>}/>
       <Route path="/Signup" element={<Signup/>}/>
+      {/* <Route path="/headphones" element={<itemlist/>}/>
+      <Route path="/laptops" element={<itempc/>}/>
+      <Route path="/smartphones" element={<itemphone/>}/>
+      <Route path="/smartwatches" element={<itemwatch/>}/> */}
+      
+
     </Routes> 
  
      

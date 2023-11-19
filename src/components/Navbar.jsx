@@ -19,12 +19,13 @@ const Navbar = () => {
                 <div className="middle">
                     <h1>TechHeaven</h1>
                 </div>
-                <div className="right">
-                <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "white",margin:'10%'}} className="custom-icon" />
-                <FontAwesomeIcon icon={faHeart} style={{color: "white",margin:'20%'}} className="custom-icon"/>
-                <Link to="/Cart"><FontAwesomeIcon icon={faCartShopping} style={{color: "white",margin:'10%'}} className="custom-icon"/></Link>
-                
-                
+                <div className="cart" >
+                <Link to="/cart">
+                    <span>
+                        <i className="fas fa-cart-plus"></i>
+                    </span>
+                    <span>2</span>  
+                </Link>  
                 </div>
             </div>
         </>
