@@ -19,7 +19,7 @@ const Navbar = (setShow) => {
                 <div className="middle">
                     <h1>TechHeaven</h1>
                 </div>
-                <div className="cart" onClick={() => setShow(false)}>
+                <div className="cart" >
                 <Link to="/cart">
                     <span>
                         <i className="fas fa-cart-plus"></i>

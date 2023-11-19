@@ -48,6 +48,7 @@ function ItemList() {
     <FontAwesomeIcon icon={faCartShopping} className="carted" />
   </div>
             </div>
+            
           </div>
         ))}
      </div>

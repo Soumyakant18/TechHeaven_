@@ -3,7 +3,13 @@
 import React, { useState } from 'react';
 import '../Authentication/Signin.css';
 import backgroundImage from '../../../TechHeaven_/src/assets/signin.jpg'; 
+<<<<<<< HEAD
+//  import { Link,NavLink } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
+=======
  import { Link,NavLink, Navigate, useNavigate } from "react-router-dom";
+>>>>>>> 4cb684b14ae46cf9cb189b3441d89c92e25777e5
 
 const Signin = () => {
   const [signup,setSignup]=useState({
@@ -65,7 +71,7 @@ const Signin = () => {
           <input type="password" id="password" name="password" value={signup.password} onChange={Signupchange} required/>
 
           <button type="submit">Sign In</button>
-          <p>Don't have a account?? <NavLink to="/Signup">Signup</NavLink> </p>
+          <p>Don't have a account?? <Link to="/Signup">Signup</Link> </p>
         </form>
       </div>
     </div>

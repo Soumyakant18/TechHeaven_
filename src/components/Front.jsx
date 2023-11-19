@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Front = () => {
@@ -14,7 +14,7 @@ const Front = () => {
         backgroundColor: 'green',
         color: 'white',
         borderRadius: '5px',
-        padding: '10px 20px',
+        padding: '10px 30px',
         border: 'none',
         cursor: 'pointer',
       };
@@ -26,7 +26,7 @@ const Front = () => {
                 <div className="banner-left">
                     <h1>True Wireless</h1>
                     <h2>Earbuds</h2>
-                    <h4>Starting from $999.</h4>
+                    <h4>Starting from ₹999.</h4>
                     <p>Visit now , SALE IS LIVE</p>
                     <Link to="/itemtws">
                     
