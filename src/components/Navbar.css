@@ -13,13 +13,15 @@
     .left{ 
        display: flex;  
        align-items: center; 
-       margin-left:8%; 
+       gap: 20px;
+       margin-left:1%; 
         
         
     } 
     .left li{ 
         list-style-type: none; 
         margin:7%; 
+        color: aliceblue;
          
     } 
  
@@ -43,7 +45,31 @@
         color: white; 
         font-weight: bold;
     } 
+    .logout{
+        background-color: plum;
+        border-radius: 1rem;
+        /* background: transparent; */
+        border: 2px solid purple;
+        font-weight: 400;
+       
+    }
+    
 } 
+
+.cart{
+margin-top: 20px;
+margin-right: 40px;
+gap: 20px;
+display: flex;
+
+
+}
 .custom-icon{ 
     font-size:larger; 
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
 }

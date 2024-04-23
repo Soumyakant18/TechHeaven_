@@ -25,8 +25,8 @@ export default function Singleproduct() {
         <div className="rightp">
             <h1>Airdopes131</h1>
             <p>Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers, IWP Technology, 650mAh Charging Case</p>
-            <h4><span>$</span>89</h4>
-            <strike ><h3>$99</h3></strike> 
+            <h4><span>₹</span>89</h4>
+            <strike ><h3>₹99</h3></strike> 
             <button style={buttonStyles}>
                 Add to Cart 
             </button>
@@ -50,7 +50,9 @@ export default function Singleproduct() {
     </div>
     <div className="descriptionp">
         <h1>Air Dopes 131 - wireless earbuds</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, recusandae magni provident dicta, cupiditate eveniet modi perspiciatis tenetur nam vitae culpa iste molestias maxime officia inventore tempora, repellendus facilis nisi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod illum quibusdam necessitatibus, ex aliquam doloribus quos dignissimos, ipsam ducimus reprehenderit sed repudiandae quia voluptate, corporis iure quo nesciunt saepe eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. In accusantium fugit nemo, error praesentium dolor soluta consequatur molestias commodi sed aspernatur distinctio odio quaerat sunt? Non cum esse porro ipsa.</p>
+        <p>Introducing the Air Dopes 131, your gateway to a wireless audio experience like never before. These cutting-edge wireless earbuds redefine convenience, style, and sound quality, ensuring that your music, calls, and entertainment are always at your fingertips.
+
+Designed for the modern lifestyle, the Air Dopes 131 combine sleek aesthetics with advanced technology. The compact and ergonomic design ensures a secure fit, allowing you to enjoy your favorite tunes or take calls on the go without any compromise on comfort.</p>
         
     
 

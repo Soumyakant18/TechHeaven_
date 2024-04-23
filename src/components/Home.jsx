@@ -6,31 +6,42 @@ import Featuredp from './Featuredp';
 import Watches from './Watches';
 import Category from './Category';
 import Footer from './Footer';
+<<<<<<< HEAD
+import Planding from './Planding'
+=======
+import Singleproduct from './Singleproduct';
+import Planding from './Planding';
+>>>>>>> ff57b3875a3dcf329df2302e6543b08588ffc5d2
 import './Home.css'; 
-import { Route, Routes } from 'react-router-dom';
+import Logpage from '../Authentication/Logpage';
+
+
+
 
 
 const Home = () => {
   return (
     <div className="home">
       <Navbar />
-{/* <<<<<<< HEAD
-      <Banner />
-      <Routes>
-        <Route path="/cart" element={<Cart />} />
-        {/* Add more routes as needed */}
-      {/* </Routes>
-======= */}
+<<<<<<< HEAD
+
+=======
+>>>>>>> ff57b3875a3dcf329df2302e6543b08588ffc5d2
       <Front/>
       <Banner/>
       <Featuredp/>
       <Category/>
       <Watches/>
       <Footer/>
+      {/* <Planding/> */}
+      
+      {/* <Logpage/> */}
+      
+    
       
 
     </div>
   );
 };
-
+ 
 export default Home;
