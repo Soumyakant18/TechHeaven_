@@ -13,7 +13,7 @@ const productsData = [
       id: 1,
 
       name: 'AXL SLAYBOOK',
-      price: '$10.99',
+      price: '₹10.99',
 
       image: productImage1,
       amount: 1,
@@ -22,7 +22,7 @@ const productsData = [
       id: 2,
 
       name: 'LEAF 550H',
-      price: '$14.99',
+      price: '₹14.99',
 
       image: productImage2,
       amount: 1,
@@ -31,7 +31,7 @@ const productsData = [
       id: 3,
 
       name: 'HP PAVILLION',
-      price: '$19.99',
+      price: '₹19.99',
  
       image: productImage3,
       amount: 1,
@@ -40,7 +40,7 @@ const productsData = [
       id: 4,
 
       name: 'IPHONE 14',
-      price: '$9.99',
+      price: '₹9.99',
 
       image: productImage4,
       amount: 1,
@@ -49,7 +49,7 @@ const productsData = [
       id: 5,
 
       name: 'BOAT RUNNER V3',
-      price: '$12.99',
+      price: '₹12.99',
 
       image: productImage5,
       amount: 1,
@@ -58,7 +58,7 @@ const productsData = [
       id: 6,
 
       name: 'HAMMER H6',
-      price: '$22.99',
+      price: '₹22.99',
 
       image: productImage6,
       amount: 1,
@@ -66,13 +66,13 @@ const productsData = [
     // {
     //   id: 7,
     //   name: 'Product 7',
-    //   price: '$15.99',
+    //   price: '₹15.99',
     //   image: 'product7.jpg',
     // },
     // {
     //   id: 8,
     //   name: 'Product 8',
-    //   price: '$8.99',
+    //   price: '₹8.99',
     //   image: 'product8.jpg',
     // },
   ];

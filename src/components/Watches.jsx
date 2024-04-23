@@ -25,7 +25,7 @@ const Watches = () => {
           <div className="banner-left">
             <h1>Smart</h1>
             <h2>Watches</h2>
-            <h4>Starting from $999.</h4>
+            <h4>Starting from ₹999.</h4>
             <p>Visit now, SALE IS LIVE</p>
 
             <Link to="/itemwatch">

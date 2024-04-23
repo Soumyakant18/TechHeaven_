@@ -1,0 +1,26 @@
+.cart-container {
+    margin-top: 20px;
+  }
+  
+  .item-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-details img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  button {
+    margin-left: auto;
+  }
+  

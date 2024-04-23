@@ -1,0 +1,8 @@
+body{
+  width: 100%;
+}
+.delvad{
+    display: flex;
+    justify-content: center;
+    margin-right: 40%;
+}
