@@ -9,6 +9,18 @@
     justify-content: center;
     padding-top: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+<<<<<<< HEAD
+=======
+   
+    
+>>>>>>> ff57b3875a3dcf329df2302e6543b08588ffc5d2
+}
+.social img{
+    width:2%;
+    margin:0 1%;
+}
+.social h3{
+    font-size: larger;
 }
 
 .social img {
@@ -52,6 +64,7 @@
     margin: 0%;
     background-color: rgb(187, 149, 253);
     color: rgb(0, 0, 0);
+<<<<<<< HEAD
     font-size: larger;
 }
 
@@ -65,5 +78,20 @@ a {
 }
 
 a:hover {
+=======
+    font-size:larger;
+    
+}
+.bottom{
+    padding: 20px 0 ;
+    background-color:rgb(187, 149, 253) ;
+}
+
+
+a{
+>>>>>>> ff57b3875a3dcf329df2302e6543b08588ffc5d2
+    text-decoration: none;
+}
+a:hover{
     text-decoration: none;
 }

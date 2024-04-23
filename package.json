@@ -15,10 +15,18 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-icons": "^5.1.0",
+=======
+<<<<<<< HEAD
+    "react-router-dom": "^6.19.0",
+    "react-scripts": "^3.0.1",
+=======
+>>>>>>> ff57b3875a3dcf329df2302e6543b08588ffc5d2
     "react-router": "^6.18.0",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
+>>>>>>> 4cb684b14ae46cf9cb189b3441d89c92e25777e5
     "react-social-icons": "^6.6.0",
     "recharts": "^2.12.6",
     "web-vitals": "^2.1.4"

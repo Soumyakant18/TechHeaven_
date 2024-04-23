@@ -21,6 +21,12 @@
     padding-left: 10%;
     text-align: left;
 }
+.banner-left button{
+   
+    padding-left: 0%;
+    text-align: left;
+}
+
 .banner-right{
     height:90vh;
     width: 49%;
@@ -36,7 +42,7 @@
     text-align: left;
     margin-top:15%;
 }
-h2{
+.banner-left h2{
     font-size:650%;
     font-weight:bolder;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

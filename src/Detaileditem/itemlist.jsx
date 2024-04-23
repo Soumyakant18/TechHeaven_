@@ -59,9 +59,17 @@ function ItemList() {
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
           ))}
         </div>
       </div>
+=======
+            
+          </div>
+        ))}
+     </div>
+    </div>
+>>>>>>> ff57b3875a3dcf329df2302e6543b08588ffc5d2
     </>
   );
 }
