@@ -9,7 +9,7 @@ function ItemWatch() {
   const [watches, setWatches] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:9190/api/allwatchdata') // Replace with your backend URL
+    fetch('http://localhost:9190/api/allwatchdata') 
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

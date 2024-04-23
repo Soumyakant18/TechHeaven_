@@ -1,7 +1,7 @@
 .body{
-    /* background-color: aliceblue; */
+  
     background: linear-gradient(to top, rgb(185, 159, 231), #ffffff);
-    /* background-attachment: fixed; */
+ 
     filter: blur(450%);
     background-size: cover;
     color: rgb(0, 0, 0);

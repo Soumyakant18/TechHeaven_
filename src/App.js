@@ -14,6 +14,8 @@ import Itemphone from './Detaileditem/itemphone';
 import Itempc from './Detaileditem/itempc'; 
 import Itemtws from './Detaileditem/itemtws'; 
 import CheckoutPage from './CartedItems/Checkout';
+import Footer from './components/Footer';
+import Category from './components/Category';
  
  
  
@@ -32,6 +34,8 @@ function App() {
       <Route path='/itemphone' element={<Itemphone/>}></Route> 
       <Route path='/itempc' element={<Itempc/>}></Route> 
       <Route path='/listitem' element={<ItemList/>}></Route> 
+      <Route path='/footer' element={<Footer/>}></Route>
+      <Route path='/category' element={<Category/>}></Route>
     </Routes> 
     </BrowserRouter> 
   ); 

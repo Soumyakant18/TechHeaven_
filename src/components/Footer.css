@@ -16,7 +16,7 @@
 .middlee{
     display: flex;
     justify-content:space-around;
-    /* background-color: rgb(185, 159, 231); */
+
     background: linear-gradient(to top, rgb(185, 159, 231), #ffffff);
     padding: 2%;
 }

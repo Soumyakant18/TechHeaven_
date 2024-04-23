@@ -29,7 +29,7 @@ function Itempc() {
         <div className="item-list">
         {pcs.map((item) => (
   <div key={item.id} className="item-container">
-    {/* Check if item.imagePath exists and is not undefined */}
+ 
     <img className="itemimg" src={`data:image/png;base64,${item.image}`} alt={item.name} />
     <div className="item-details">
       <h3 className="prname">{item.name || 'Unknown'}</h3>

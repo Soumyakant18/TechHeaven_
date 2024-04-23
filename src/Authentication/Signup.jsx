@@ -22,8 +22,8 @@ const Signup = () => {
     const phone=val.phone
     const password=val.password
     const data={email,password,phone,username}
-    // console.log(data)
-    fetch('http://localhost:8080/api/student', {
+
+    fetch('http://localhost:9190/api/student', {
     method: "post",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)

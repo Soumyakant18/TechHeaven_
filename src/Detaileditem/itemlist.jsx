@@ -11,7 +11,7 @@ function ItemList() {
   const [headphones, setHeadphones] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:9190/api/allheadphonedata') // Replace with your backend URL
+    fetch('http://localhost:9190/api/allheadphonedata') 
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

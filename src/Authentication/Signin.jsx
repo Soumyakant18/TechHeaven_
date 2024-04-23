@@ -18,15 +18,15 @@ const Signin = () => {
     const username=val.username
     const password=val.password
     const data={password,username}
-    // console.log(data)
+  
     rs()
             async function rs() {
-                let ft=await fetch(`http://localhost:8090/login/${data.username}/${data.password}`,{
+                let ft=await fetch(`http://localhost:9190/login/${data.username}/${data.password}`,{
                     method:"get",
                     headers:{"Content-Type":"application/json"}, 
                 })
                 let jsf=await ft.json();
-                // const roles=jsf.role
+             
                 if (jsf) {
                   navigate(`/home`);
                 }
@@ -45,7 +45,7 @@ const Signin = () => {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    minHeight: '100vh', // Set your desired height
+    minHeight: '100vh', 
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -65,6 +65,7 @@ const Signin = () => {
           <input type="password" id="password" name="password" value={signup.password} onChange={Signupchange} required/>
 
           <button type="submit">Sign In</button>
+          
           <p>Don't have a account?? <NavLink to="/Signup">Signup</NavLink> </p>
         </form>
       </div>

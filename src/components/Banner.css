@@ -1,9 +1,8 @@
 .body1{
-    /* background: url("/src/assets/bg.png"); */
-    /* background-attachment: fixed; */
+ 
     filter: blur(450%);
     background: linear-gradient(to bottom, rgb(185, 159, 231), #ffffff);
-    /* background-size: cover; */
+
     color: aliceblue;
     padding: 0%;
     margin: 0%;
